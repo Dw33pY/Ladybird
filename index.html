@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- LOADER -->
+    <div id="loader" class="loader-container">
+        <img src="ladybird_loader.png" alt="Loading Ladybird Nails..." class="loader-image">
+    </div>
+
     <!-- WhatsApp Float Button (Left Side) -->
     <a href="https://wa.me/254748406061?text=Hello%20Ladybird%20Nails%20Parlour%2C%20I'd%20like%20to%20book%20an%20appointment" 
        target="_blank" 
@@ -20,11 +25,8 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-icon">🐞</span>
-                <div class="logo-text">
-                    <span class="logo-main">Ladybird</span>
-                    <span class="logo-sub">Nails Parlour</span>
-                </div>
+                <img src="ladybird.png" alt="Ladybird" class="logo-img">
+                <!-- logo text removed -->
             </a>
             
             <div class="nav-menu" id="navMenu">
@@ -56,34 +58,34 @@
         </div>
     </nav>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="hero-background"></div>
-    <div class="container hero-container">
-        <div class="hero-content">
-            <h1 class="hero-title">Elegant Nail Care in Ongata Rongai</h1>
-            <p class="hero-subtitle">Professional nail treatments, creative nail art, and grooming services with an emphasis on hygiene and quality.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">
-                    <i class="fas fa-calendar-alt"></i> Book Appointment
-                </a>
-                <a href="#services" class="btn btn-secondary">
-                    <i class="fas fa-spa"></i> View Services
-                </a>
-            </div>
-            <div class="hero-info">
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Siron Place, Ongata Rongai</span>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Elegant Nail Care in Ongata Rongai</h1>
+                <p class="hero-subtitle">Professional nail treatments, creative nail art, and grooming services with an emphasis on hygiene and quality.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Book Appointment
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-spa"></i> View Services
+                    </a>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-clock"></i>
-                    <span>Mon-Sat: 9AM-9PM | Sun: 9AM-8PM</span>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Siron Place, Ongata Rongai</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9AM-9PM | Sun: 9AM-8PM</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Services Section -->
     <section class="services" id="services">
@@ -95,49 +97,32 @@
             
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-hand-sparkles"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
                     <h3 class="service-name">Manicures & Pedicures</h3>
                     <p class="service-description">Professional care for hands and feet with premium products.</p>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-gem"></i></div>
                     <h3 class="service-name">Gel Nails</h3>
                     <p class="service-description">Durable gel polish for a high-shine, long-lasting finish.</p>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
                     <h3 class="service-name">Acrylics</h3>
                     <p class="service-description">Artificial nail enhancements for added length and strength.</p>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-flask"></i></div>
                     <h3 class="service-name">BIAB Treatments</h3>
                     <p class="service-description">Builder in a Bottle gel for strengthening natural nails.</p>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
                     <h3 class="service-name">Creative Nail Art</h3>
                     <p class="service-description">Custom designs and intricate hand-painted patterns.</p>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-eye"></i></div>
                     <h3 class="service-name">Eyebrow Grooming</h3>
                     <p class="service-description">Professional eyebrow shaping and maintenance services.</p>
                 </div>
@@ -145,7 +130,7 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery Section (Carousel) -->
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-header">
@@ -153,22 +138,38 @@
                 <p class="section-subtitle">Browse our collection of nail art and designs</p>
             </div>
             
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg" alt="Elegant nail design">
+            <div class="gallery-carousel-container">
+                <div class="gallery-carousel" id="galleryCarousel">
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg" alt="Elegant nail design" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="French tip nails" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/5871817/pexels-photo-5871817.jpeg" alt="Artistic nail patterns" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/15491630/pexels-photo-15491630.jpeg" alt="Modern nail design" loading="lazy">
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w-600&q=80" alt="French tip nails">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/5871817/pexels-photo-5871817.jpeg" alt="Artistic nail patterns">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/15491630/pexels-photo-15491630.jpeg" alt="Modern nail design">
-                </div>
+                <button class="carousel-prev" aria-label="Previous image">&#10094;</button>
+                <button class="carousel-next" aria-label="Next image">&#10095;</button>
+                <div class="carousel-dots"></div>
             </div>
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+        </div>
+        <div class="lightbox-caption"></div>
+    </div>
 
     <!-- About & Contact Section -->
     <section class="about-contact" id="about">
@@ -181,22 +182,10 @@
                     <div class="amenities">
                         <h3 class="amenities-title">Our Amenities</h3>
                         <div class="amenities-grid">
-                            <div class="amenity">
-                                <i class="fas fa-wifi"></i>
-                                <span>Free Wi-Fi</span>
-                            </div>
-                            <div class="amenity">
-                                <i class="fas fa-restroom"></i>
-                                <span>Restroom</span>
-                            </div>
-                            <div class="amenity">
-                                <i class="fas fa-wheelchair"></i>
-                                <span>Wheelchair Accessible</span>
-                            </div>
-                            <div class="amenity">
-                                <i class="fas fa-coffee"></i>
-                                <span>Refreshments</span>
-                            </div>
+                            <div class="amenity"><i class="fas fa-wifi"></i><span>Free Wi-Fi</span></div>
+                            <div class="amenity"><i class="fas fa-restroom"></i><span>Restroom</span></div>
+                            <div class="amenity"><i class="fas fa-wheelchair"></i><span>Wheelchair Accessible</span></div>
+                            <div class="amenity"><i class="fas fa-coffee"></i><span>Refreshments</span></div>
                         </div>
                     </div>
                 </div>
@@ -206,9 +195,7 @@
                     
                     <div class="contact-info">
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="contact-details">
                                 <h4>Location</h4>
                                 <p>First Floor, Siron Place Building</p>
@@ -217,9 +204,7 @@
                         </div>
                         
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
                             <div class="contact-details">
                                 <h4>Phone Number</h4>
                                 <p><a href="tel:+254748406061">+254 748 406061</a></p>
@@ -227,9 +212,7 @@
                         </div>
                         
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
                             <div class="contact-details">
                                 <h4>Opening Hours</h4>
                                 <p><strong>Monday – Saturday:</strong> 9:00 AM – 9:00 PM</p>
@@ -240,12 +223,8 @@
                     </div>
                     
                     <div class="contact-buttons">
-                        <a href="tel:+254748406061" class="btn btn-primary">
-                            <i class="fas fa-phone"></i> Call Now
-                        </a>
-                        <a href="https://wa.me/254748406061" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
+                        <a href="tel:+254748406061" class="btn btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+                        <a href="https://wa.me/254748406061" target="_blank" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -258,7 +237,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <span class="logo-icon">🐞</span>
+                        <img src="ladybird.png" alt="Ladybird" class="logo-img">
                         <div>
                             <h3>Ladybird Nails Parlour</h3>
                             <p class="footer-tagline">Professional nail care in Ongata Rongai</p>
@@ -296,4 +275,4 @@
 
     <script src="script.js"></script>
 </body>
-  </html>
+</html>
