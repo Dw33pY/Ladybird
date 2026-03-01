@@ -58,9 +58,16 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Video Background -->
     <section class="hero" id="home">
-        <div class="hero-background"></div>
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline preload="auto" class="hero-video">
+                <!-- Replace with your own video file, e.g., hero.mp4 -->
+                <source src="video2.mp4" type="video/mp4">
+                <!-- Fallback background image if video fails -->
+                <img src="https://images.pexels.com/photos/3997359/pexels-photo-3997359.jpeg" alt="Nail care background" class="hero-fallback">
+            </video>
+        </div>
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Elegant Nail Care in Ongata Rongai</h1>
@@ -130,7 +137,7 @@
         </div>
     </section>
 
-    <!-- Gallery Section (Carousel) -->
+    <!-- Gallery Section (Carousel) – Randomized 13 images + 6 videos -->
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-header">
@@ -140,17 +147,82 @@
             
             <div class="gallery-carousel-container">
                 <div class="gallery-carousel" id="galleryCarousel">
-                    <div class="gallery-item">
-                        <img src="https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg" alt="Elegant nail design" loading="lazy">
+                    <!-- Items will be populated by JavaScript for randomness, but we'll hardcode a shuffled order for simplicity -->
+                    <!-- Shuffled list: 19 items (13 images, 6 videos) with placeholder filenames -->
+                    <div class="gallery-item" data-type="image">
+                        <img src="img1.jpg" alt="Nail design 1" loading="lazy">
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="French tip nails" loading="lazy">
+                    <div class="gallery-item" data-type="video">
+                        <video preload="metadata" muted playsinline>
+                            <source src="video1.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-play-icon"><i class="fas fa-play"></i></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://images.pexels.com/photos/5871817/pexels-photo-5871817.jpeg" alt="Artistic nail patterns" loading="lazy">
+                    <div class="gallery-item" data-type="image">
+                        <img src="img2.jpg" alt="Nail design 2" loading="lazy">
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://images.pexels.com/photos/15491630/pexels-photo-15491630.jpeg" alt="Modern nail design" loading="lazy">
+                    <div class="gallery-item" data-type="image">
+                        <img src="img3.jpg" alt="Nail design 3" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="video">
+                        <video preload="metadata" muted playsinline>
+                            <source src="video2.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-play-icon"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img4.jpg" alt="Nail design 4" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img5.jpg" alt="Nail design 5" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="video">
+                        <video preload="metadata" muted playsinline>
+                            <source src="video3.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-play-icon"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img6.jpg" alt="Nail design 6" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img7.jpg" alt="Nail design 7" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="video">
+                        <video preload="metadata" muted playsinline>
+                            <source src="video4.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-play-icon"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img8.jpg" alt="Nail design 8" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img9.jpg" alt="Nail design 9" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="video">
+                        <video preload="metadata" muted playsinline>
+                            <source src="video5.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-play-icon"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img10.jpg" alt="Nail design 10" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img11.jpg" alt="Nail design 11" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="video">
+                        <video preload="metadata" muted playsinline>
+                            <source src="video6.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-play-icon"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img12.jpg" alt="Nail design 12" loading="lazy">
+                    </div>
+                    <div class="gallery-item" data-type="image">
+                        <img src="img13.jpg" alt="Nail design 13" loading="lazy">
                     </div>
                 </div>
                 <button class="carousel-prev" aria-label="Previous image">&#10094;</button>
@@ -160,15 +232,15 @@
         </div>
     </section>
 
-    <!-- Lightbox Modal -->
+    <!-- Lightbox Modal (supports both image and video, no caption) -->
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
         <button class="lightbox-prev">&#10094;</button>
         <button class="lightbox-next">&#10095;</button>
         <div class="lightbox-content">
-            <img id="lightbox-image" src="" alt="">
+            <!-- content dynamically inserted -->
         </div>
-        <div class="lightbox-caption"></div>
+        <!-- Caption removed -->
     </div>
 
     <!-- About & Contact Section -->
